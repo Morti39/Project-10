@@ -565,4 +565,7 @@ footer a {
         height: 50px;
         font-size: 20px;
     }
+    .regBody {
+        width: 380px;
+    }
 }
