@@ -333,6 +333,16 @@ td a:hover {
     margin-bottom: 10px;
     border-style: none;
 }
+.err {
+    font-size: 80px;
+    font-weight: 600;
+
+}
+.err2 {
+    font-size: 40px;
+    font-weight: 600;
+
+}
 .arsub {
     width: 600px;
     height: 60px;
@@ -359,6 +369,9 @@ footer {
     align-items: center;
     justify-content: center;
 
+}
+.contacts {
+    justify-self: center;
 }
 footer .link {
     margin-left: 30px;
@@ -512,8 +525,13 @@ footer a {
     .logo-image {
         width: 100px;
     }
-    nav {
-        display: none;
+    nav ul li a {
+        font-size: 13px;
+        margin: 0px 10px;
+
+    }
+    nav ul {
+        padding: 0px 10px;
     }
     td img {
         width: 50px;
@@ -530,6 +548,10 @@ footer a {
     footer {
         font-size: 7pt;
         line-height: 150%;
+        padding-top: 20px;
+        height: 60px;
+        display: block;
+
     }
     .arsub {
         width: 300px;
@@ -549,6 +571,13 @@ footer a {
         justify-self: center;
         
     }
+    .submit:hover {
+        width: 250px;
+        height: 50px;
+        display: flex;
+        justify-self: center;
+        
+    }
     .authForm {
         width: 250px;
         height: 50px;
@@ -557,8 +586,8 @@ footer a {
         margin: 0;
     }
     .sel {
-        width: 250px;
-        height: 50px;
+        width: 300px;
+        height: 30px;
     }
     #arsub {
         width: 250px;
@@ -567,5 +596,22 @@ footer a {
     }
     .regBody {
         width: 380px;
+    }
+    .regForm {
+        width: 300px;
+        height: 30px;
+    }
+    .profbody {
+        width: 380px;
+    }
+    .selText {
+        font-size: 20px;
+    }
+    .err {
+        font-size: 50px;
+
+    }
+    .err2 {
+        font-size: 30px;
     }
 }
