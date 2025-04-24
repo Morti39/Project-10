@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+{% block title %} Регистрация {% endblock %}
+{% block body %}
+<section id="tegistration">
+    <div class="regBody">
+        <h1 style="text-align: center; font-size: 25px;">Регистрация</h1>
+        <form action=""><label for="email">email</label> <br>
+        <input type="email" class="regForm" placeholder="email"> <br>
+        <label for="email">Придумайте логин</label> <br>
+        <input type="text" class="regForm" placeholder="логин"> <br>
+        <label for="email">Придумайте пароль</label> <br>
+        <input type="password" class="regForm" placeholder="пароль"> <br>
+        <label for="email">Подтвердите пароль</label> <br>
+        <input type="password" class="regForm" placeholder="пароль"> <br>
+        <input type="submit" value="Зарегистрироваться" class="regbutton">
+    </form>
+    </div>
+</section>
+{% endblock %}

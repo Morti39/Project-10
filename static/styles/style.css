@@ -1,0 +1,568 @@
+
+* {
+    box-sizing: border-box;
+}
+.hidden {
+    display: none !important;
+}
+.welcome {
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+#profile {
+    padding-left: 10px;
+    justify-self: center;
+
+}
+.profbody {
+    background-color: #2d4430;
+    width: 700px;
+    border-radius: 10px ;
+    justify-self: center;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.615);
+    padding: 20px;
+
+}
+body{
+    background-color: #455848;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    margin: 0;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+header {
+    background-color: #1c271e;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    
+}
+nav ul li {
+    display: inline;
+
+    
+}
+nav ul li a {
+    margin: 0px 20px;
+    text-decoration: none;
+    font-size: 14pt;
+    color: white;
+}
+nav ul li a:hover {
+    color: #999;
+    transition: .2s all;
+}
+.logo-image {
+    width: 300px;
+    height: auto;
+}
+
+#slider {
+    display: flex;
+    text-align: center;
+    justify-self: center;
+}
+.slide {
+    width: 250px;
+    background-color: #2d4430 ;
+    margin: 0 40px;
+    padding: 10px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.629);
+
+}
+.name {
+    font-size: 16pt;
+    font-weight: 600;
+}
+section {
+    margin: 30px 0;
+}
+.rating  {
+    font-size: 16pt;
+}
+.more-info:hover {
+    color: #999;
+    transition: .2s all;
+}
+.sliderbuttons {
+    justify-self: center;
+    font-size: 30pt;
+    z-index: 100;
+    display: flex;
+}
+.prev, .next {
+    margin: 0 15px ;
+    border-radius: 10px;
+    border: solid 2px white;
+    padding: 3px 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.629);
+}
+.prev:hover, .next:hover {
+    color: #aaa;
+    border:solid 2px #aaa;
+    transition: .2s all;
+}
+
+#authorization{
+    justify-items: center;
+    width: 500px;
+    justify-self: center;
+    border-radius: 25px;
+    box-shadow:  2px 2px 10px rgba(0, 0, 0, 0.629);
+    padding: 10px;
+    background-color: #2d4430;
+}
+.authText {
+    width: 550px;
+    font-size: 20px;
+    margin-bottom: 60px;
+
+}
+
+.authForm  {
+    width: 400px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 15px;
+    border-style: none;
+    margin: 10px;
+}
+.forgot {
+    font-size: 15px;
+    text-align: center;
+}
+.forgot a {
+    color: #fff;
+    text-decoration: none;
+    transition: .2s all;
+    margin-top: 10px;
+}
+.forgot a:hover {
+    color: #999;
+    transition: .2s all;
+}
+.submit {
+    width: 400px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 15px;
+    border-style: none;
+    margin: 10px;
+    color: white;
+    background-color: #2bc943;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.315);
+    transition: .2s all;
+    
+
+}
+#arsub {
+    width: 400px; height: 60px; margin-top: 20px;
+}
+.submit:hover {
+    width: 400px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 15px;
+    border-style: none;
+    margin: 10px;
+    color: #2bc943;
+    background-color:white ;
+    transition: .2s all;
+
+}
+.aboutText {
+    font-size: 16pt;
+}
+#about  h1 {
+    justify-self: center;
+}
+#about div {
+
+    justify-self: center;
+    padding: 3px;
+
+}
+#about {
+    padding: 5px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    background-color: #2d4430;
+    width: 1000px;
+    border-radius: 10px ;
+    justify-self: center;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.615);
+}
+video {
+    width: 1000px;
+    justify-self: center;
+    display: flex;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.615);
+}
+.comp {
+    width: 1600px;
+    background: #2d4430;
+    margin-top: 0;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.615);
+    justify-self: center;
+
+}
+.table {
+    margin-top: 50px;
+    width: 100%;
+    color: #fff;
+}
+thead {
+    font-size: 30px;
+}
+tbody {
+    padding: 15px 0;
+    text-align: center;
+}
+td {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+td img {
+    width: 150px;
+}
+
+.find {
+    width: 100vw;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.find input {
+    font-size: 30px;
+    width: 90%;
+    height: 60px;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+td a {
+    text-decoration: none;
+    color: white;
+    transition: .2s all;
+
+}
+td a:hover {
+    color: #999;
+    transition: .2s all;
+}
+.feedback{
+    width: 1000px;
+    background-color: #2d4430 ;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.615);
+    justify-self: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+
+}
+.userLogo {
+    display: flex;
+    float: left;
+    width: 60px; 
+    height: 60px;
+    border-radius: 60px; 
+    margin-right: 10px;
+}
+.feedback1 , .feedback2 {
+    margin-bottom: 10px;
+    border-bottom: 4px solid #1e2920;
+    padding: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.feedback3 {
+    padding: 20px;
+    padding-bottom: 5px;
+    padding-top: 0px;
+}
+.sub {
+    width: 700px;
+    height: 500px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d4430;
+    justify-self: center;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.615);
+}
+.subform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.check {
+    color: #fff;
+    font-size: 20px;
+    width: 600px;
+    margin-left: 10px;
+}
+.arinput {
+    width: 600px;
+    height: 60px;
+    font-size: 40px;
+    border-radius: 10px;
+    padding: 0 5px;
+    background: #fff;
+    margin-bottom: 10px;
+    border-style: none;
+}
+.arsub {
+    width: 600px;
+    height: 60px;
+    font-size: 40px;
+    border-radius: 10px;
+    padding: 0 5px;
+    background: #2bc943;
+    margin-bottom: 10px;
+    border-style: none;
+    color: white;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.315);
+    transition: .2s all;
+}
+#arsub:hover {
+    background-color: #fff;
+    color: #2bc943;
+    transition: .2s all;
+}
+footer {
+    width: 100vw;
+    background: #1c271e;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+
+}
+footer .link {
+    margin-left: 30px;
+    transition: .2s all;
+}
+footer .link:hover {
+    color: #aaa;
+    transition: .2s all;
+}
+footer a {
+    color: white;
+}
+.subText {
+    color: #fff; font-size: 50px; margin-bottom: 10px;margin-top: 25px;
+}
+.sube {
+    color: #aaa; font-size: 50px; margin-bottom: 10px; align-self: start; margin-left: 10px;
+}
+.sel {
+    border-radius: 5px;
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+    border-style: none;
+}
+.selText {
+    font-size: 30px;
+}
+.regBody {
+    justify-self: center;
+    padding: 20px;
+    background-color: #2d4430 ;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.615);
+    width: 600px;
+
+    
+}
+.regBody label{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.regbutton {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 3px;
+    padding: 0 5px;
+    background: #2bc943;
+    margin-bottom: 10px;
+    border-style: none;
+    color: white;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.315);
+    transition: .2s all;
+    margin-left: 10px;
+}
+.regbutton:hover {
+    background-color: #fff;
+    color: #2bc943;
+    transition: .2s all;
+}
+.regForm  {
+    width: 400px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 3px;
+    border-style: none;
+    margin: 10px;
+}
+@media (max-width: 1200px) {
+    td {
+        font-size: 15px;
+    }
+
+    
+}
+@media (max-width: 1100px) {
+    .feedback {
+        width: 900px;
+    }    
+    thead {
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width: 1050px) {
+    #about {
+        width: 900px;
+    }
+    video {
+        width: 900px;
+    }
+    .comp {
+        width: 900px;
+    }
+    footer {
+        font-size: 10pt;
+    }
+
+}
+@media (max-width: 1450px) {
+    footer .link {
+        margin-left: 10px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .comp {
+        width: 380px;
+
+    }
+    thead{
+        font-size: 9px;
+    }
+    #about {
+        width: 380px;
+    }
+    video {
+        width: 380px;
+    }
+    #authorization {
+        width: 380px;
+    }
+    .feedback {
+        width: 380px;
+    }
+    #search {
+        width: 380px;
+        justify-self: center;
+    }
+    .sub {
+        width: 380px;
+        height: 380px;
+    }
+    .arinput {
+        width: 300px;
+    }
+    .subText {
+        font-size: 25px;
+        margin-top: 0;
+    }
+    .sube {
+        font-size: 20px;
+        width: 300px;
+    }
+    #first, #third {
+        display: none;
+    } 
+    .logo-image {
+        width: 100px;
+    }
+    nav {
+        display: none;
+    }
+    td img {
+        width: 50px;
+    }
+    .tablePhoto {
+        display: none;
+    }
+    td {
+        font-size: 8px;
+    }
+    .aboutText {
+        font-size: 15px;
+    }
+    footer {
+        font-size: 7pt;
+        line-height: 150%;
+    }
+    .arsub {
+        width: 300px;
+        height: 60px;
+    }
+    .check {
+        width: 300px;
+    }
+    .arinput {
+        font-size: 20px;
+
+    }
+    .submit {
+        width: 250px;
+        height: 50px;
+        display: flex;
+        justify-self: center;
+        
+    }
+    .authForm {
+        width: 250px;
+        height: 50px;
+        display: flex;
+        justify-self: center;
+        margin: 0;
+    }
+    .sel {
+        width: 250px;
+        height: 50px;
+    }
+    #arsub {
+        width: 250px;
+        height: 50px;
+        font-size: 20px;
+    }
+}

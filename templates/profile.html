@@ -1,0 +1,43 @@
+{% extends 'base.html'%}
+{% block title %} Личный кабинет {% endblock %}
+{% block body %}
+<section id = "profile">
+    <div class="profbody">    
+    <h1 style =' text-align: center; font-size: 40px;'>Запись на конкурс</h1>
+        <div class = 'welcome'>
+            <img src = "{{url_for('static', filename ='media/images/userlogo.jpg')}}" alt="Фото профиля" class="userLogo" style="float: right;">
+            <div style="height: 60px; padding-top: 15px; justify-self: center; font-size: 18pt; font-weight: 600;">Павел</div>
+        </div>
+
+    <div class="reg" style="height: 85% !important">
+        <form class="arform">
+            <div class="selText">Конкурс:</div>
+            <select required class="sel">
+                <option value="-" disabled selected>--Выберите конкурс--</option>
+                <option value="1">Спасти пленника</option>
+                <option value="2">Военный рюкзак</option>
+                <option value="3">Следопыт</option>
+                <option value="4">Радисты</option>
+                <option value="5">Передай эстафету</option>
+            </select>
+            <div class="selText">Дата:</div>
+            <select required class="sel">
+                <option value="-" disabled selected>--Выберите дату--</option>
+                <option value="1">8 мая 2025г.</option>
+            </select>
+            <div class="selText">Время:</div>
+            <select required class="sel">
+                <option value="-" disabled selected>--Выберите время--</option>
+                <option value="1">с 9 до 10</option>
+                <option value="1">с 11 до 12</option>
+            </select>
+            <div class="selText">Количесво участников:</div>
+            <input type="number" class="sel" name="count" required placeholder="Количество участников"> <br>
+            <button type="submit" class="arsub" id="arsub">Зарегистрироваться</button>
+        </form>
+
+    </div>
+</div>
+    </section>
+
+{% endblock %}

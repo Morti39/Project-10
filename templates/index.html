@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+{% block title %} Главная страница  {% endblock %}
+{% block body %}
+<section id = "slider">
+    <div class ='slide' id ="first">
+        <img class = 'slider-image' src ="{{url_for('static', filename ='media/images/comp4.png')}}" alt="Конкурс 1" style="width: 100px; height: auto;">
+        <div class="slider content">
+        <div class="name"> 3 </div> <hr>
+        <p>Заранее подготавливаем звукозапись, которая будет состоять из разных, поочередно повторяющихся звуков: мяуканья кошки, пения птицы, журчания воды, лая собаки, звонка в дом и так далее. Участники игры слушают эти звуки и стараются угадать их источники. За каждый угаданный звук игрок получает балл (должен его угадать первым). Соответственно победителем становится тот, кто имеет набольшее их количество.</p>
+        </div> 
+        <div class="rating">4.3 / 5</div>
+        <a class="more-info" href="/competitions/RadioOperators" style ='text-decoration: none; color: white;'>Подробнее ></a>
+    </div>
+    <div class ='slide ' id ="3">
+        <img class = 'slider-image' src ="{{url_for('static', filename ='media/images/comp2.jfif')}}" alt="Конкурс 3" style="width: 100px; height: auto;">
+        <div class="slider content">
+        <div class="name"> 4 </div> <hr>
+        <p>Участники разделяются на несколько команд. За 5 минут каждая команда составляет  список вещей, которые обязательно нужно брать в военный поход. При этом их размер не должен превышать самого рюкзака. Далее команды сверяют списки. Победит та, чей список окажется больше.</p>
+        </div> 
+        <div class="rating">5 / 5</div>
+        <a class="more-info" href="/competitions/MilitaryBackpack" style ='text-decoration: none; color: white;'>Подробнее ></a>
+    </div>
+    <div class ='slide ' id ="third">
+        <img class = 'slider-image' src ="{{url_for('static', filename ='media/images/comp3.jpg')}}" alt="Конкурс 2" style="width: 100px; height: auto;">
+        <div class="slider content">
+        <div class="name">5</div> <hr>
+        <p> В комнате прячут большое количество  флажков, которые должны найти игроки. За каждый флажок ведущий вручает ребятам  одну букву из слова «СЛЕДОПЫТ». Команда, которой удастся быстрее всех составить слово и будет считаться победившей. Количество комплектов букв должно быть равно числу игроков.</p>
+        </div> 
+        <div class="rating">4.6 / 5</div>
+        <a class="more-info" href="/competitions/MilitaryBackpack" style ='text-decoration: none; color: white;'>Подробнее ></a>
+    </div>
+</section>    
+    <div class="sliderbuttons">
+        <div class=" controls prev"><</div>
+        <div class=" controls next">></div> 
+    </div>
+
+<section id ='authorization'>
+    <h1 style="font-size: 20pt;">Авторизация</h1>
+    <form action="" class="auth">
+        <input  class ='authForm'type="text" name="username" required placeholder="Логин"> <br>
+        <input class="authForm" type="password" name="password" required placeholder="Пароль"> <br>
+        <div class="forgot"><a href="" >Забыли пароль?</a></div>
+    <button class="submit" type="submit">зарегестрироваться</button>
+    </form>
+</section>
+<section id = "about">
+    <h1> О нас</h1>
+    <div class="aboutText">Международный проект «Патриотические конкурсы». Организатор — межрегиональная патриотическая спортивная детско-молодёжная общественная организация по развитию культуры, спорта и спортивно-патриотическому воспитанию «Спорт-Патриот Калининградской области»</div>
+</section>
+<section id ="video">
+    <div class="video" id="video">
+        <video src="{{url_for('static', filename= 'media/videos/hello.mp4')}}" controls alt="Видео"></video>
+    </div>
+</section>
+<div class="comp" id="comp">
+    <p style="color: #fff; font-size: 50px; margin-bottom: 10px; text-align: center;">Конкурсы</p>
+    <table class="table">
+        <thead>
+            <th>Название</th>
+            <th class ='tablePhoto'>Фото</th>
+            <th colspan="2">Описание</th>
+            <th>Рейтинг</th>
+            <th>Свободные места</th>
+            <th>Ссылка</th>
+        </thead>
+        <tbody>
+            <td>Спасти пленника</td>
+            <td class ='tablePhoto' ><img src="{{url_for('static', filename ='media/images/comp1.jpg')}}"></td>
+            <td colspan = '2'>Игроки должны разделиться по парам. Каждому связывают сзади руки. По сигналу участникам каждой пары необходимо развязать друг другу руки, спасая тем самым товарища из плена. Ребята, которые сделают это быстрее остальных, считаются победителями.</td>
+            <td>5 / 5 </td>
+            <td>3</td>
+            <td><a href="competition.html" class="slidemore">Подробнее </a></td>
+        </tbody>
+        <tbody>
+            <td>Военный рюкзак</td>
+            <td class ='tablePhoto'><img src="{{url_for('static', filename ='media/images/comp2.jfif')}}"></td>
+            <td colspan = '2'>Участники разделяются на несколько команд. За 5 минут каждая команда составляет  список вещей, которые обязательно нужно брать в военный поход. При этом их размер не должен превышать самого рюкзака. Далее команды сверяют списки. Победит та, чей список окажется больше.</td>
+            <td>5 / 5 </td>
+            <td>11</td>
+            <td><a href="competition.html" class="slidemore">Подробнее </a></td>
+        </tbody>
+        <tbody>
+            <td>Следопыт</td>
+            <td class ='tablePhoto'><img src="{{url_for('static', filename ='media/images/comp3.jpg')}}"></td>
+            <td colspan = '2'>В комнате прячут большое количество  флажков, которые должны найти игроки. За каждый флажок ведущий вручает ребятам  одну букву из слова «СЛЕДОПЫТ». Команда, которой удастся быстрее всех составить слово и будет считаться победившей. Количество комплектов букв должно быть равно числу игроков.</td>
+            <td>4.6 / 5 </td>
+            <td>10</td>
+            <td><a href="competition.html" class="slidemore">Подробнее </a></td>
+        </tbody>
+        <tbody>
+            <td>Радисты</td>
+            <td class ='tablePhoto'><img src="{{url_for('static', filename ='media/images/comp4.png')}}"></td>
+            <td colspan = '2'>Заранее подготавливаем звукозапись, которая будет состоять из разных, поочередно повторяющихся звуков: мяуканья кошки, пения птицы, журчания воды, лая собаки, звонка в дом и так далее. Участники игры слушают эти звуки и стараются угадать их источники. За каждый угаданный звук игрок получает балл (должен его угадать первым). Соответственно победителем становится тот, кто имеет набольшее их количество.</td>
+            <td>4.3 / 5 </td>
+            <td>13</td>
+            <td><a href="competition.html" class="slidemore">Подробнее </a></td>
+        </tbody>
+        <tbody>
+            <td>Передай эстафету</td>
+            <td class ='tablePhoto'><img src="{{url_for('static', filename ='media/images/comp5.jfif')}}"></td>
+            <td colspan = '2'>Ребята распределяются на 2 команды (если игроков очень много, команд может быть больше). Каждый игрок должен добраться до цели и вернуться назад, передав эстафету очередному участнику. Делать же это каждый будет по-разному: первые из участников – вперед спиной, вторые — на одной ноге, третьи — в присядку, четвёртые — ползком, пятые — бегом с отжиманиями. Побеждает команда, которая завершит эстафету быстрее всех.</td>
+            <td>5 / 5 </td>
+            <td>20</td>
+            <td><a href="competition.html" class="slidemore">Подробнее </a></td>
+        </tbody>
+    </table>
+</div>
+<section id ='search' class  ='hidden'>
+    <p style="color: #fff; font-size: 50px; margin-bottom: 10px; text-align: center;">Поиск</p>
+        <div class="search">
+            <datalist class="comps" id="comps" aria-placeholder="Поиск" >
+                <option value="Передай эстафету"></option>
+                <option value="Радисты"></option>
+                <option value="Следопыт"></option>
+                <option value="Военный рюкзак"></option>
+                <option value="Спасти пленника"></option>
+            </datalist>
+            <input type="text"style="width: 800px; display: flex; justify-self: center; height: 40px; font-size: 30px;" list="comps" autocomplete="on">
+        </div>
+
+
+</section>
+<section id = "feedback">
+    
+    <div class="feedback">
+         <h1 style="display: flex; justify-self:  center; font-size: 40px;">Отзывы</h1>
+        <div class="feedback1">
+            <div class="feedbackUser">
+                <img src = "{{url_for('static', filename ='media/images/userlogo.jpg')}}" alt="Фото профиля" class="userLogo">
+                <p style="font-size: 14pt; margin-bottom: 5px;">Павел Варов</p>
+                <p style="color: #999; margin-top: 5px;">23.02.2025</p>
+            </div> <br>
+                <div class="feedbackText">«Отличный конкурс! Получил массу удовольствия!» <br><a href="competition1.html" style="color: #fff;">Подробнее</a></div>
+        </div>
+        <div class="feedback2">
+            <div class="feedbackUser">
+            <img src = "{{url_for('static', filename ='media/images/userlogo1.jpg')}}" alt="Фото профиля" class="userLogo">
+            <p style="font-size: 14pt; margin-bottom: 5px;">Инокентий Металллург</p>
+            <p style="color: #999; margin-top: 5px;">23.02.2025</p>
+        </div> <br>
+        <div class="feedbackText">«Это был незабываемый опыт!» <br><a href="competition1.html" style="color: #fff;">Подробнее</a></div>
+    </div>
+    <div class="feedback3">
+        <div class="feedbackUser">
+        <img src = "{{url_for('static', filename ='media/images/userlogo1.jpg')}}" alt="Фото профиля" class="userLogo">
+        <p style="font-size: 14pt; margin-bottom: 5px;">Виталий Шахтов</p>
+        <p style="color: #999; margin-top: 5px;">23.02.2025</p>
+    </div> <br>
+    <div class="feedbackText">«Мне очень понравилось, советую всем принять участие!» <br><a href="competition1.html" style="color: #fff;">Подробнее</a></div>
+    </div>       
+</section>
+<section id ="subscribe">
+    <div class="sub">
+        <form class="subform">
+            <h1 class="subText">Подписка на новости</h1>
+            <p class="sube">Ваш email:</p>
+            <input type="email" class="arinput" name="email" required placeholder="Введите ваш email">
+            <div class="check">
+                <input type="checkbox" class="checkbox" name="check" required>
+                <label for="check">Я согласен на обработку персональных данных</label>
+            </div>
+            <button type="submit" class="arsub">Подписаться</button>
+        </form>
+    </div>   
+</section>
+
+{% endblock %}

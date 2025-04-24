@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% block title %} {% endblock %}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href= "{{ url_for('static', filename = 'styles/style.css') }}">
+        {% block style %} {% endblock %}
+    </head>
+    <body>
+        <header>
+                <img src ="{{ url_for('static', filename ='media/images/logo.png' )}}" alt="Логотип" class = 'logo-image'>
+                <h1> 80 лет победы</h1>    
+                <nav>
+                        <ul>
+                            <li><a href="/">Главная</a></li>
+                            <li><a href="/registration">Регистрация</a></li>
+                            <li><a href="/#authorization"> Авторизация </a></li>
+                            <li><a href="/profile">Запись на конкукрс
+
+                                
+                            </a></li>
+                            <li><a href="/#about"> О нас </a></li>
+                            <li><a href="/#comp">Конкурсы</a></li>
+                            <li><a href="/#search"> Поиск </a></li>
+                            
+                        </ul>
+                        <div class ='theme-toggle  hidden' >
+                            <label for ='theme-switch'>Темная тема </label>
+                            <input type ='checkbox' id = "theme-switch">
+                        </div>
+                    </nav>
+
+        </header>
+        {% block body %}{% endblock %}
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        {% block script %}{% endblock %}
+        <footer id='cont'>
+            <div class="contacts">
+                <a href="tel:+74012999999" class="link">Телефон: +7-4012-99-99-99</a>
+                <a href="mailto:konig39@yandex.ru" class="link">Почта: konig39@yandex.ru</a>
+            </div>
+            <div class="contacts">
+                <a href="/" class="link">Главная</a>
+                <a href="/light" class="link hidden">Главная-светлая</a>
+                <a href="/registration" class="link">Регистрация</a>
+                <a href="/competition" class="link">Конкурс</a>
+                <a href="/profile" class="link">Личный кабинет</a>
+                <a href="shedule.html" class="link">Расписание</a>
+                <a href="404.html" class="link">Страница не найдена</a>
+            </div>
+        </footer>
+    </body>
+</html>
+
